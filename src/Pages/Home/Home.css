@@ -1,0 +1,40 @@
+/* 🌗 Base container */
+.home-container {
+  display: flex;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* 🌞 Light Mode */
+.home-container.light {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+/* 🌙 Dark Mode */
+.home-container.dark {
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+/* Sidebar and Feed layout */
+
+.container {
+  /* make room for a fixed sidebar on the left */
+  margin-left: 240px;    /* set to sidebar width */
+  padding: 80px 20px 20px; /* leave space for navbar at top */
+  box-sizing: border-box;
+  width: calc(100% - 240px); /* ensure container uses remaining width */
+}
+
+
+.large-container {
+  margin-left: 80px;
+}
+
+
+.feed-item {
+  background-color: inherit;
+  border-radius: 10px;
+  padding: 10px;
+}

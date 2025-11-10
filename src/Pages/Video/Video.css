@@ -1,0 +1,32 @@
+.video-page {
+  margin-left: 240px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-details {
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.video-details h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.video-details p {
+  font-size: 14px;
+  color: #606060;
+}

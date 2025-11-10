@@ -1,0 +1,96 @@
+/* ====== SIDEBAR BASE ====== */
+.sidebar {
+  width: 240px;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  background-color: var(--nav-bg);
+  transition: all 0.3s ease;
+}
+
+
+.sidebar.light {
+  background-color: #ffffff;
+  color: #000;
+  border-color: #ddd;
+}
+
+.sidebar.dark {
+  background-color: #181818;
+  color: #ffffff;
+  border-color: #303030;
+}
+
+/* ====== SIDEBAR LINKS ====== */
+.side-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.side-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.dark .side-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.side-link img {
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+.side-link p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ====== ACTIVE LINK ====== */
+.side-link.active {
+  background-color: rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+}
+
+.sidebar.dark .side-link.active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ====== SUBSCRIBED LIST ====== */
+.subscribed-list {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  transition: border 0.3s ease;
+}
+
+.sidebar.dark .subscribed-list {
+  border-color: #303030;
+}
+
+.subscribed-list h3 {
+  font-size: 13px;
+  margin: 10px 20px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+/* ====== SMALL SIDEBAR ====== */
+.small-sidebar {
+  width: 80px;
+}
+
+.small-sidebar .side-link p,
+.small-sidebar h3 {
+  display: none;
+}
+
+.small-sidebar .side-link {
+  justify-content: center;
+}

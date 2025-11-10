@@ -1,0 +1,115 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Theme variables */
+.light {
+  --bg-color: #ffffff;
+  --text-color: #111;
+}
+
+.dark {
+  --bg-color: #181818;
+  --text-color: #ffffff;
+}
+
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+
+/* --- Left Section --- */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-icon {
+  width: 24px;
+  cursor: pointer;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.brand-name:hover {
+  color: #ff0000; /* YouTube red highlight */
+}
+
+/* --- Middle Section --- */
+.nav-middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 6px 12px;
+  background-color: #f9f9f9;
+  width: 60%;
+  max-width: 500px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  font-size: 15px;
+}
+
+.search-box img {
+  width: 20px;
+  cursor: pointer;
+}
+
+/* --- Right Section --- */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.mode-toggle {
+  background: transparent;
+  border: 1px solid var(--text-color);
+  border-radius: 25px;
+  padding: 5px 12px;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.mode-toggle:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+.user-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
